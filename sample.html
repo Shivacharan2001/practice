@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+    <div class="main">
+            <form>
+            <div class="display">
+                <input type="text" name="display" >
+            </div>
+            <div class="frst" >
+                <input type="button" value="AC" class="b" onclick="display.value=''">
+                <input type="button" value="DE" class="b" onclick="display.value= display.value .toString().slice(0,-1)">
+                <input type="button" value="/" class="b" onclick="display.value+='/'">
+                <input type="button" value="." class="b" onclick="display.value+='.'">
+        </div>
+        <div class="snd">
+            <input type="button" value="9" class="b" onclick="display.value+='9'">
+            <input type="button" value="8" class="b" onclick="display.value+='8'">
+            <input type="button" value="7" class="b" onclick="display.value+='7'">
+            <input type="button" value="" class="b" onclick="display.value+=''">
+    </div>
+    <div class="trd">
+        <input type="button" value="6" class="b" onclick="display.value+='6'">
+        <input type="button" value="5" class="b" onclick="display.value+='5'">
+        <input type="button" value="4" class="b" onclick="display.value+='4'">
+        <input type="button" value="-" class="b" onclick="display.value+='-'">
+    </div>
+    <div class="frth">
+        <input type="button" value="3" class="b" onclick="display.value+='3'">
+        <input type="button" value="2" class="b" onclick="display.value+='2'">
+        <input type="button" value="1" class="b" onclick="display.value+='1'">
+        <input type="button" value="+" class="b" onclick="display.value+='+'">
+    </div>
+    <div class="fith">
+        <input type="button" value="0" class="b" onclick="display.value+='0'">
+        <input type="button" value="00" class="b" onclick="display.value+='00'">
+        <input type="button" value="%"  class="b" onclick="display.value+='%'">
+        <input type="button" value="=" class="equals" onclick="display.value=eval(display.value)">
+    </div>
+        </form> 
+        </div>
+
+
+
+</body>
+</html>
